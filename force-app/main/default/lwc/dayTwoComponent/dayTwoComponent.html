@@ -1,0 +1,47 @@
+<template>
+    
+     Name:
+
+    <lightning-formatted-name
+         first-name={contact.firstName}
+         last-name={contact.lastName}
+         format="short"
+         ></lightning-formatted-name>
+         <hr/>    
+     Age: 
+
+     <lightning-formatted-number
+      value={contact.age}
+     ></lightning-formatted-number>     
+        <hr/>
+     Salary: 
+
+     <lightning-input type="checkbox"
+         label="Is Salared" 
+         name="input1"
+         value ={contact.isSalaried}       
+     ></lightning-input>
+        <hr/>
+     Phone Number :
+
+     <lightning-formatted-phone
+      value={contact.phoneNumber}
+      ></lightning-formatted-phone>
+        <hr/>
+      Email:
+
+      <lightning-formatted-phone
+      value={contact.email}
+      ></lightning-formatted-phone>
+
+</template>
+
+</template for:each ={contactlist} for:item ="contact" >
+    key ={contact.email}>
+
+    
+   </template>
+
+</template>
+
+ 

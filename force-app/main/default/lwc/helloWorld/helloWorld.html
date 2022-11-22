@@ -1,0 +1,34 @@
+<template>
+   Hello world 
+   <br><!--means break row, or chan-->
+   <!--Displaying Data from JS file with help of Basic HTML-->
+   First Name: {contact_firstName}<br>
+   Age :{concact_age}<br>
+   Salary :{concact_isSalared}
+
+        <hr/> <!--Horizontal Row-->
+   <!--Displaying Data from JS file with help of Salesforce -->
+    Name:
+   <lightning-formatted-name
+        first-name={contact_firstName}
+        last-name={concact_lastName}
+        format="short"
+        ></lightning-formatted-name>
+        <hr/>    
+    Age:    
+    <lightning-formatted-number
+     value={concact_age}
+    ></lightning-formatted-number>     
+       <hr/>
+    Salary:  
+    <lightning-input type="checkbox"
+        label="Is Salared" 
+        name="input1"
+        value ={concact_isSalared}
+        
+        
+    ></lightning-input>
+    <hr/>
+   
+</template>
+
